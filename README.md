@@ -1,5 +1,10 @@
 # Biblioteca Municipal de San Miguel — El Salvador
 
+![Laravel](https://img.shields.io/badge/Laravel-12.x-FF2D20)
+![PHP](https://img.shields.io/badge/PHP-8.2-777BB4)
+![SQLite](https://img.shields.io/badge/SQLite-base%20de%20datos-lightblue)
+![Tests](https://img.shields.io/badge/tests-3%20passing-brightgreen)
+
 API REST pequena (Laravel + PHP) para gestionar el catalogo de una biblioteca
 municipal en El Salvador: CRUD de libros, categorias y filtrado por categoria.
 
@@ -182,4 +187,4 @@ Las validaciones devuelven HTTP 422 con los errores en formato JSON.
 
 - No se puede eliminar un libro inexistente (404).
 - No se puede eliminar una categoria con libros asociados (409 Conflict),
-  ademas la FK en la base de datos usa `restrictOnDelete()` como segunda barrera.
+- ademas la FK en la base de datos usa `restrictOnDelete()` como segunda barrera.
